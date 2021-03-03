@@ -35,12 +35,12 @@ stages:
             inputs:
               command: 'custom'
               workingDir: buildAndReleaseTask/test # Update to the name of the directory of your task's tests
-              customCommand: 'sync-request'
+              customCommand: 'install sync-request'
           - task: Npm@1
             inputs:
               command: 'custom'
               workingDir: buildAndReleaseTask/test # Update to the name of the directory of your task's tests
-              customCommand: '@types/mocha'
+              customCommand: 'install @types/mocha'
           - task: Npm@1
             inputs:
               command: 'custom'
