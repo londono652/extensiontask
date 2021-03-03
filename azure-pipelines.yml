@@ -45,7 +45,7 @@ stages:
             inputs:
               command: 'custom'
               workingDir: buildAndReleaseTask # Update to the name of the directory of your task's tests
-              customCommand: 'mocha buildAndReleaseTask/test/_suite.js' # See the definition in the explanation section below - it may be called test
+              customCommand: 'test test/_suite.js' # See the definition in the explanation section below - it may be called test
           - task: PublishTestResults@2
             inputs:
               testResultsFormat: 'JUnit'
