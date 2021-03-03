@@ -18,7 +18,7 @@ stages:
           - task: Npm@1
             inputs:
               command: 'install'
-              workingDir: /buildAndReleaseTask # Update to the name of the directory of your task
+              workingDir: 'buildAndReleaseTask' # Update to the name of the directory of your task
           - task: Bash@3
             displayName: Compile Javascript
             inputs:
