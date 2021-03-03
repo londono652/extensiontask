@@ -32,6 +32,9 @@ stages:
               targetType: "inline"
               script: |
                 cd buildAndReleaseTask # Update to the name of the directory of your task
+                npm install mocha
+                npm install sync-request
+                npm install @types/mocha
                 npm run testScript
           - task: PublishTestResults@2
             inputs:
