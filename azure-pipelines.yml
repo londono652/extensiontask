@@ -29,28 +29,8 @@ stages:
           - task: Npm@1
             inputs:
               command: 'custom'
-<<<<<<< HEAD
               workingDir: buildAndReleaseTask/test # Update to the name of the directory of your task's tests
               customCommand: 'testScript' # See the definition in the explanation section below - it may be called test
-=======
-              workingDir: buildAndReleaseTask
-              customCommand: 'install mocka'
-          - task: Npm@1
-            inputs:
-              command: 'custom'
-              workingDir: buildAndReleaseTask
-              customCommand: 'install sync-request'
-          - task: Npm@1
-            inputs:
-              command: 'custom'
-              workingDir: buildAndReleaseTask
-              customCommand: 'install @types/mocha'
-          - task: Npm@1
-            inputs:
-              command: 'custom'
-              workingDir: buildAndReleaseTask # Update to the name of the directory of your task's tests
-              customCommand: 'test test/_suite.js' # See the definition in the explanation section below - it may be called test
->>>>>>> f4f360dbf10055559e08a1f262d2edfa9b0cb1ab
           - task: PublishTestResults@2
             inputs:
               testResultsFormat: 'JUnit'
