@@ -26,26 +26,13 @@ stages:
               script: |
                 cd buildAndReleaseTask # Update to the name of the directory of your task
                 tsc
-          - task: Npm@1
+          - task: Bash@3
+            displayName: Correr Script de pruebas
             inputs:
-              command: 'custom'
-              workingDir: buildAndReleaseTask/test # Update to the name of the directory of your task's tests
-              customCommand: 'install mocha'
-          - task: Npm@1
-            inputs:
-              command: 'custom'
-              workingDir: buildAndReleaseTask/test # Update to the name of the directory of your task's tests
-              customCommand: 'install sync-request'
-          - task: Npm@1
-            inputs:
-              command: 'custom'
-              workingDir: buildAndReleaseTask/test # Update to the name of the directory of your task's tests
-              customCommand: 'install @types/mocha'
-          - task: Npm@1
-            inputs:
-              command: 'custom'
-              workingDir: buildAndReleaseTask
-              customCommand: 'run testScript' # See the definition in the explanation section below - it may be called test
+              targetType: "inline"
+              script: |
+                cd buildAndReleaseTask # Update to the name of the directory of your task
+                npm run testScript
           - task: PublishTestResults@2
             inputs:
               testResultsFormat: 'JUnit'
