@@ -95,7 +95,7 @@ stages:
               connectTo: 'VsTeam'
               connectedServiceName: 'MarketPlace' # Change to whatever you named the service connection
               fileType: 'vsix'
-              vsixFile: '/Publisher.*.vsix'
+              vsixFile: '/londono652.*.vsix'
               publisherId: '$(PublisherID)'
               extensionId: '$(ExtensionID)'
               extensionName: '$(ExtensionName)'
