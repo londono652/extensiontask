@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "testScript": "mocha ./_suite.js --reporter xunit --reporter-option output=ResultsFile.xml"
+    "testScript": "mocha ./test/_suite.js --reporter xunit --reporter-option output=ResultsFile.xml"
   },
   "author": "",
   "license": "ISC",
