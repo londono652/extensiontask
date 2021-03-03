@@ -1,0 +1,4 @@
+<testsuite name="Mocha Tests" tests="2" failures="0" errors="0" skipped="0" timestamp="Wed, 03 Mar 2021 23:14:14 GMT" time="0.375">
+<testcase classname="Sample task tests" name="should succeed with simple inputs" time="0.227"/>
+<testcase classname="Sample task tests" name="it should fail if tool returns 1" time="0.146"/>
+</testsuite>
