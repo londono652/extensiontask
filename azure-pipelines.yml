@@ -93,12 +93,12 @@ stages:
           - task: PublishAzureDevOpsExtension@3
             inputs:
               connectTo: 'VsTeam'
-              connectedServiceName: 'MarketPlace' # Change to whatever you named the service connection
+              connectedServiceName: 'MarketPlace'
               fileType: 'vsix'
-              vsixFile: '/londono652.*.vsix'
+              vsixFile: '/londono652.build-release-task-0.0.2.vsix'
               publisherId: '$(PublisherID)'
               extensionId: '$(ExtensionID)'
               extensionName: '$(ExtensionName)'
               updateTasksVersion: false
-              extensionVisibility: 'public' # Change to public if you're publishing to the marketplace
+              extensionVisibility: 'public'
               extensionPricing: 'free'
