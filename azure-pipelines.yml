@@ -95,7 +95,7 @@ stages:
               connectTo: 'VsTeam'
               connectedServiceName: 'MarketPlace'
               fileType: 'vsix'
-              vsixFile: '/londono652.build-release-task-0.0.2.vsix'
+              vsixFile: 'londono652.build-release-task-0.0.2.vsix'
               publisherId: '$(PublisherID)'
               extensionId: '$(ExtensionID)'
               extensionName: '$(ExtensionName)'
